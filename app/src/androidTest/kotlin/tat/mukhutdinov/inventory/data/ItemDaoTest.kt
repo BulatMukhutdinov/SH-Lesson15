@@ -8,6 +8,7 @@ import junit.framework.TestCase.assertEquals
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.test.runTest
 import org.junit.After
+import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -47,17 +48,51 @@ class ItemDaoTest {
 
     @Test
     fun daoGetAllItems_returnsAllItemsFromDB() = runTest {
-        addTwoItemToDb()
+        addTwoItemsToDb()
         val allItems = itemDao.getAllItems().first()
         assertEquals(allItems[0], item1)
         assertEquals(allItems[1], item2)
+    }
+
+    @Test
+    fun daoUpdateItems_updatesItemsInDB() = runTest {
+        val updatedItem1 = item1.copy(price = 15.0)
+        val updatedItem2 = item2.copy(quantity = 0)
+        addTwoItemsToDb()
+
+        itemDao.update(updatedItem1)
+        itemDao.update(updatedItem2)
+
+        val allItems = itemDao.getAllItems().first()
+        assertEquals(allItems[0], updatedItem1)
+        assertEquals(allItems[1], updatedItem2)
+    }
+
+    @Test
+    fun daoDeleteItems_deletesAllItemsFromDB() = runTest {
+        addTwoItemsToDb()
+        itemDao.delete(item1)
+        itemDao.delete(item2)
+
+        val allItems = itemDao.getAllItems().first()
+
+        assertTrue(allItems.isEmpty())
+    }
+
+    @Test
+    fun daoGetItem_returnsItemFromDB() = runTest {
+        addOneItemToDb()
+
+        val item = itemDao.getItem(1)
+
+        assertEquals(item.first(), item1)
     }
 
     private suspend fun addOneItemToDb() {
         itemDao.insert(item1)
     }
 
-    private suspend fun addTwoItemToDb() {
+    private suspend fun addTwoItemsToDb() {
         itemDao.insert(item1)
         itemDao.insert(item2)
     }
