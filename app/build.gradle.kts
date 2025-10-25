@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "tat.mukhutdinov.inventory"
+    namespace = "tat.mukhutdinov.busschedule"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "tat.mukhutdinov.inventory"
+        applicationId = "tat.mukhutdinov.busschedule"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
