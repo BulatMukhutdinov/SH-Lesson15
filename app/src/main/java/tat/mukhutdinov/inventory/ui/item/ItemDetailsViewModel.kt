@@ -1,4 +1,4 @@
-package tat.mukhutdinov.lesson17.ui.item
+package tat.mukhutdinov.inventory.ui.item
 
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel

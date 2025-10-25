@@ -1,6 +1,6 @@
 @file:OptIn(ExperimentalMaterial3Api::class)
 
-package tat.mukhutdinov.lesson17
+package tat.mukhutdinov.inventory
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
@@ -15,7 +15,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import tat.mukhutdinov.lesson17.ui.navigation.InventoryNavHost
+import tat.mukhutdinov.inventory.ui.navigation.InventoryNavHost
 
 /**
  * Top level composable that represents screens for the application.

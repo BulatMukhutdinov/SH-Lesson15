@@ -1,4 +1,4 @@
-package tat.mukhutdinov.lesson17.ui
+package tat.mukhutdinov.inventory.ui
 
 import android.app.Application
 import androidx.lifecycle.ViewModelProvider.AndroidViewModelFactory
@@ -6,11 +6,11 @@ import androidx.lifecycle.createSavedStateHandle
 import androidx.lifecycle.viewmodel.CreationExtras
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
-import tat.mukhutdinov.lesson17.InventoryApplication
-import tat.mukhutdinov.lesson17.ui.home.HomeViewModel
-import tat.mukhutdinov.lesson17.ui.item.ItemDetailsViewModel
-import tat.mukhutdinov.lesson17.ui.item.ItemEditViewModel
-import tat.mukhutdinov.lesson17.ui.item.ItemEntryViewModel
+import tat.mukhutdinov.inventory.InventoryApplication
+import tat.mukhutdinov.inventory.ui.home.HomeViewModel
+import tat.mukhutdinov.inventory.ui.item.ItemDetailsViewModel
+import tat.mukhutdinov.inventory.ui.item.ItemEditViewModel
+import tat.mukhutdinov.inventory.ui.item.ItemEntryViewModel
 
 /**
  * Provides Factory to create instance of ViewModel for the entire Inventory app

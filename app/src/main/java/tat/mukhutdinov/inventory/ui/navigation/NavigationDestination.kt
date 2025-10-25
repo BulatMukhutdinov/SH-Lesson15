@@ -1,4 +1,4 @@
-package tat.mukhutdinov.lesson17.ui.navigation
+package tat.mukhutdinov.inventory.ui.navigation
 
 /**
  * Interface to describe the navigation destinations for the app

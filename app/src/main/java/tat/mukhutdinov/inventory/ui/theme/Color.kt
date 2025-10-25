@@ -1,4 +1,4 @@
-package tat.mukhutdinov.lesson17.ui.theme
+package tat.mukhutdinov.inventory.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

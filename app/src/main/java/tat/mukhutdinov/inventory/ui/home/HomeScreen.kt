@@ -1,4 +1,4 @@
-package tat.mukhutdinov.lesson17.ui.home
+package tat.mukhutdinov.inventory.ui.home
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -31,12 +31,12 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import tat.mukhutdinov.lesson17.InventoryTopAppBar
-import tat.mukhutdinov.lesson17.R
-import tat.mukhutdinov.lesson17.data.Item
-import tat.mukhutdinov.lesson17.ui.item.formatedPrice
-import tat.mukhutdinov.lesson17.ui.navigation.NavigationDestination
-import tat.mukhutdinov.lesson17.ui.theme.InventoryTheme
+import tat.mukhutdinov.inventory.InventoryTopAppBar
+import tat.mukhutdinov.inventory.R
+import tat.mukhutdinov.inventory.data.Item
+import tat.mukhutdinov.inventory.ui.item.formatedPrice
+import tat.mukhutdinov.inventory.ui.navigation.NavigationDestination
+import tat.mukhutdinov.inventory.ui.theme.InventoryTheme
 
 object HomeDestination : NavigationDestination {
     override val route = "home"
@@ -127,7 +127,8 @@ private fun InventoryList(
         contentPadding = contentPadding
     ) {
         items(items = itemList, key = { it.id }) { item ->
-            InventoryItem(item = item,
+            InventoryItem(
+                item = item,
                 modifier = Modifier
                     .padding(dimensionResource(id = R.dimen.padding_small))
                     .clickable { onItemClick(item) })

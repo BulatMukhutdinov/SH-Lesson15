@@ -1,4 +1,4 @@
-package tat.mukhutdinov.lesson17.ui.item
+package tat.mukhutdinov.inventory.ui.item
 
 import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.Arrangement
@@ -36,11 +36,11 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
-import tat.mukhutdinov.lesson17.InventoryTopAppBar
-import tat.mukhutdinov.lesson17.R
-import tat.mukhutdinov.lesson17.data.Item
-import tat.mukhutdinov.lesson17.ui.navigation.NavigationDestination
-import tat.mukhutdinov.lesson17.ui.theme.InventoryTheme
+import tat.mukhutdinov.inventory.InventoryTopAppBar
+import tat.mukhutdinov.inventory.R
+import tat.mukhutdinov.inventory.data.Item
+import tat.mukhutdinov.inventory.ui.navigation.NavigationDestination
+import tat.mukhutdinov.inventory.ui.theme.InventoryTheme
 
 object ItemDetailsDestination : NavigationDestination {
     const val ITEM_ID_ARG = "itemId"
@@ -200,7 +200,8 @@ private fun DeleteConfirmationDialog(
     onDeleteCancel: () -> Unit,
     modifier: Modifier = Modifier
 ) {
-    AlertDialog(onDismissRequest = { /* Do nothing */ },
+    AlertDialog(
+        onDismissRequest = { /* Do nothing */ },
         title = { Text(stringResource(R.string.attention)) },
         text = { Text(stringResource(R.string.delete_question)) },
         modifier = modifier,

@@ -1,4 +1,4 @@
-package tat.mukhutdinov.lesson17
+package tat.mukhutdinov.inventory
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -8,7 +8,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
-import tat.mukhutdinov.lesson17.ui.theme.InventoryTheme
+import tat.mukhutdinov.inventory.ui.theme.InventoryTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

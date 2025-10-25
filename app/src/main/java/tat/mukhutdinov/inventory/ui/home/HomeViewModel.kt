@@ -1,7 +1,7 @@
-package tat.mukhutdinov.lesson17.ui.home
+package tat.mukhutdinov.inventory.ui.home
 
 import androidx.lifecycle.ViewModel
-import tat.mukhutdinov.lesson17.data.Item
+import tat.mukhutdinov.inventory.data.Item
 
 /**
  * ViewModel to retrieve all items in the Room database.

@@ -1,8 +1,8 @@
-package tat.mukhutdinov.lesson17
+package tat.mukhutdinov.inventory
 
 import android.app.Application
-import tat.mukhutdinov.lesson17.data.AppContainer
-import tat.mukhutdinov.lesson17.data.AppDataContainer
+import tat.mukhutdinov.inventory.data.AppContainer
+import tat.mukhutdinov.inventory.data.AppDataContainer
 
 class InventoryApplication : Application() {
 

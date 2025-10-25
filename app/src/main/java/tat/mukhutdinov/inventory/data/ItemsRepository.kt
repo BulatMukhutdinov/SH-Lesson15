@@ -1,4 +1,4 @@
-package tat.mukhutdinov.lesson17.data
+package tat.mukhutdinov.inventory.data
 
 /**
  * Repository that provides insert, update, delete, and retrieve of [Item] from a given data source.

@@ -1,4 +1,4 @@
-package tat.mukhutdinov.lesson17.data
+package tat.mukhutdinov.inventory.data
 
 import android.content.Context
 

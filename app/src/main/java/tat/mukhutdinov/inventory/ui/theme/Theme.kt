@@ -1,4 +1,4 @@
-package tat.mukhutdinov.lesson17.ui.theme
+package tat.mukhutdinov.inventory.ui.theme
 
 import android.app.Activity
 import android.os.Build

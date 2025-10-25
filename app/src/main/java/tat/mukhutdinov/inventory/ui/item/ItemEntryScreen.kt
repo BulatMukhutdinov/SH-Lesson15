@@ -1,4 +1,4 @@
-package tat.mukhutdinov.lesson17.ui.item
+package tat.mukhutdinov.inventory.ui.item
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -24,11 +24,11 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.viewmodel.compose.viewModel
-import tat.mukhutdinov.lesson17.InventoryTopAppBar
-import tat.mukhutdinov.lesson17.R
-import tat.mukhutdinov.lesson17.ui.AppViewModelProvider
-import tat.mukhutdinov.lesson17.ui.navigation.NavigationDestination
-import tat.mukhutdinov.lesson17.ui.theme.InventoryTheme
+import tat.mukhutdinov.inventory.InventoryTopAppBar
+import tat.mukhutdinov.inventory.R
+import tat.mukhutdinov.inventory.ui.AppViewModelProvider
+import tat.mukhutdinov.inventory.ui.navigation.NavigationDestination
+import tat.mukhutdinov.inventory.ui.theme.InventoryTheme
 import java.util.Currency
 import java.util.Locale
 

@@ -1,4 +1,4 @@
-package tat.mukhutdinov.lesson17.ui.navigation
+package tat.mukhutdinov.inventory.ui.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -7,14 +7,14 @@ import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
-import tat.mukhutdinov.lesson17.ui.home.HomeDestination
-import tat.mukhutdinov.lesson17.ui.home.HomeScreen
-import tat.mukhutdinov.lesson17.ui.item.ItemDetailsDestination
-import tat.mukhutdinov.lesson17.ui.item.ItemDetailsScreen
-import tat.mukhutdinov.lesson17.ui.item.ItemEditDestination
-import tat.mukhutdinov.lesson17.ui.item.ItemEditScreen
-import tat.mukhutdinov.lesson17.ui.item.ItemEntryDestination
-import tat.mukhutdinov.lesson17.ui.item.ItemEntryScreen
+import tat.mukhutdinov.inventory.ui.home.HomeDestination
+import tat.mukhutdinov.inventory.ui.home.HomeScreen
+import tat.mukhutdinov.inventory.ui.item.ItemDetailsDestination
+import tat.mukhutdinov.inventory.ui.item.ItemDetailsScreen
+import tat.mukhutdinov.inventory.ui.item.ItemEditDestination
+import tat.mukhutdinov.inventory.ui.item.ItemEditScreen
+import tat.mukhutdinov.inventory.ui.item.ItemEntryDestination
+import tat.mukhutdinov.inventory.ui.item.ItemEntryScreen
 
 /**
  * Provides Navigation graph for the application.

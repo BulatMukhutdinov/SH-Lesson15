@@ -1,10 +1,10 @@
-package tat.mukhutdinov.lesson17.ui.item
+package tat.mukhutdinov.inventory.ui.item
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
-import tat.mukhutdinov.lesson17.data.Item
+import tat.mukhutdinov.inventory.data.Item
 import java.text.NumberFormat
 
 /**

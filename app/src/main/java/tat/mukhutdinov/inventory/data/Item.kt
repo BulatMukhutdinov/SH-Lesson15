@@ -1,4 +1,4 @@
-package tat.mukhutdinov.lesson17.data
+package tat.mukhutdinov.inventory.data
 
 /**
  * Entity data class represents a single row in the database.
